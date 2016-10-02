@@ -42,8 +42,110 @@ public class SignoZodiacal {
                 System.out.println("Año Nacimiento");
                 anio=sc.nextInt();
                 
+                String zodiaco=obtenerZodiaco(mes,dia);
 		
 	}
-
+        
+        
+        public static String obtenerZodiaco(int mes, int dia){
+            String zodiaco = "";
+            switch(mes) {		
+                case 1: 
+                    if (dia>=21)
+                        zodiaco="Acuario";
+                    else
+                        zodiaco="Capricornio";				
+                break;
+                
+                case 2:
+    
+                    if (dia>=20)
+                        zodiaco="Piscis";
+                    else
+                        zodiaco="Acuario";
+                break;
+                
+                case 3:
+                    
+                    if(dia>=21)
+                        zodiaco="Aries";
+                    else
+                        zodiaco="Piscis";
+                break;
+                
+                case 4:
+                    
+                    if(dia>=21)
+                        zodiaco="Tauro";
+                    else
+                        zodiaco="Aries";
+                break;
+               
+                case 5:
+                    
+                    if(dia>=22)
+                        zodiaco="Geminis";
+                    else
+                        zodiaco="Tauro";
+                break;
+                
+                case 6:
+                    
+                    if(dia>=22)
+                        zodiaco="Cancer";
+                    else
+                        zodiaco="Geminis";
+                break;
+                
+                case 7:
+                    
+                    if(dia>=23)
+                        zodiaco="Leo";
+                    else
+                        zodiaco="Cancer";
+                break;
+                
+                case 8:
+                    
+                    if(dia>=24)
+                        zodiaco="Virgo";
+                    else
+                        zodiaco="Leo";
+                break;
+                
+                case 9:
+                    
+                    if(dia>=24)
+                        zodiaco="Libra";
+                    else
+                        zodiaco="Virgo";
+                break;
+                
+                case 10:
+                    
+                    if(dia>=24)
+                        zodiaco="Escorpion";
+                    else
+                        zodiaco="Libra";
+                break;
+                
+                case 11:
+                    
+                    if(dia>=23)
+                        zodiaco="Sagitario";
+                    else
+                        zodiaco="Escorpion";
+                break;
+                
+                case 12:
+                    
+                    if(dia>=22)
+                        zodiaco="Capricornio";
+                    else
+                        zodiaco="Sagitario";
+                break;
+        }
+            return zodiaco;
+        }
     
 }
