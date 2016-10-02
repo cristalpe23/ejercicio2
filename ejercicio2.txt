@@ -17,6 +17,33 @@ public class SignoZodiacal {
      * @param args the command line arguments
      */
     public static void main(String[] args) {
-    }
+                Scanner sc = new Scanner (System.in);
+   		String nombre,apellido;
+		int edad,matricula,dia,mes,anio;
+		
+		System.out.println("Nombre: ");
+		nombre= sc.next();
+		
+		System.out.println("Apellido: ");
+		apellido= sc.next();
+		
+		System.out.println("Edad");
+		edad= sc.nextInt();
+		
+		System.out.println("Matricula");
+		matricula= sc.nextInt();
+                
+                System.out.println("Dia Nacimiento");
+                dia=sc.nextInt();
+                
+                System.out.println("Mes Nacimiento");
+                mes=sc.nextInt();
+                
+                System.out.println("Año Nacimiento");
+                anio=sc.nextInt();
+                
+		
+	}
+
     
 }
