@@ -43,6 +43,8 @@ public class SignoZodiacal {
                 anio=sc.nextInt();
                 
                 String zodiaco=obtenerZodiaco(mes,dia);
+                
+                System.out.println("Tu signo zodical es " + zodiaco);
 		
 	}
         
